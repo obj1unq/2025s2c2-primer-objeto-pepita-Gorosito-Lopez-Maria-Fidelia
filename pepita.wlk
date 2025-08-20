@@ -12,7 +12,9 @@ object pepita {
   method energiaActual(){
     return energia
   }
-
+  method comer(_alimento) {
+    energia = energia + _alimento.energiaQueAporta()
+  }
 }
 
 object alpiste {
@@ -20,6 +22,7 @@ object alpiste {
     return 20
   }
 }
+
 
 
 
