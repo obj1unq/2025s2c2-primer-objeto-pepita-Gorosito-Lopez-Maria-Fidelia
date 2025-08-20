@@ -23,7 +23,16 @@ object alpiste {
   }
 }
 
-
+object manzana {
+  const valorBase = 5
+  var madurez = 1
+  method energiaQueAporta(){
+    return valorBase * madurez
+  }
+  method madurar() {
+    madurez = madurez + (self.energiaQueAporta() * 0.1)
+  }
+}
 
 
 
